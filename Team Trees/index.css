@@ -1,0 +1,126 @@
+/* general */
+body {
+    background: linear-gradient(to bottom, #aaa, #ddd);
+    background-repeat: no-repeat;
+    font-size: 1.01rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+span {
+    color: green;
+}
+
+hr {
+    padding: 3% brown;
+    margin-right: 40px;
+}
+
+/* header */
+#header {
+    display: inline-block;
+    background: rgb(2, 2, 49);
+    color: brown;
+    margin: 0;
+    width: 100%;
+    border-bottom: rgba(196, 62, 62, 0.842) 4px solid;
+}
+
+#header h1 {
+    text-align: center;
+    margin: 2rem;
+    font-size: 2.5rem;
+}
+
+/* body */
+#container  {
+    display: inline-block;
+    margin: 2rem;
+    border: 4px solid #444;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+#container .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 1rem;
+    grid-column-gap: 1rem;
+    margin: 1rem;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.image {
+    height: 14rem;
+    width: 20rem;
+}
+
+.img {
+    padding: 2rem 2rem 2rem 2rem;
+    border: rgba(225, 225, 225, 0.753) solid 2px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.button button {
+    margin: 0 0 0.9rem 47%;
+    padding: 20px 30px 20px 30px;
+    border: 1px #aaa solid;
+    border-radius: 40px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    transition-property: background;
+    transition-duration: 2s;
+}
+
+.button button a {
+    text-decoration: none;
+    color: black;
+}
+
+.button button:hover {
+    background-color: rgb(181, 235, 217);
+}
+
+#foot {
+    text-align: center;
+    background-color: brown;
+    color: green;
+    font-size: 1rem;
+    padding: 2rem;
+    font-weight: bold;
+}
+
+@media(max-width: 768) {
+    body {
+        text-align: left;
+        display: block;
+    }
+
+    #container {
+        padding: 1rem;
+        display: inline-block;
+    }
+
+    section#container .container {
+        display: inline-block;
+    }
+
+    #foot {
+        display: none;
+    }
+}

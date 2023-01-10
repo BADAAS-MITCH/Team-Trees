@@ -1,0 +1,218 @@
+/* general */
+body {
+    background: linear-gradient(to bottom, #aaa, #ddd);
+    background-repeat: no-repeat;
+    font-size: 1.01rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+span {
+    color: green;
+}
+
+hr {
+    padding: 3% brown;
+    margin-right: 40px;
+}
+
+/* header */
+#header {
+    display: inline-block;
+    background: rgb(2, 2, 49);
+    color: brown;
+    margin: 0;
+    width: 100%;
+    border-bottom: rgba(196, 62, 62, 0.842) 4px solid;
+}
+
+#header h1 {
+    text-align: center;
+    margin: 2rem;
+    font-size: 2.5rem;
+}
+
+
+/* body */
+#body {
+    padding-left: 5px;
+    justify-content: center;
+}
+
+#body h1 {
+    font-size: 3rem;
+}
+
+#body .container p {
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.h1 p {
+    text-align: center;
+    font-weight: 50;
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1rem;
+    margin: 1rem;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+#containbutton {
+    border: #444 3px solid;
+    margin: 0 2.4rem 1.5rem  0.9rem;
+    border-radius: 15px;
+}
+
+.image {
+    height: 14rem;
+    width: 20rem;
+}
+
+.img {
+    padding: 2rem 2rem 2rem 2rem;
+    border: rgba(225, 225, 225, 0.753) solid 2px;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.button button {
+    margin: 0 0 0.9rem 47%;
+    padding: 20px;
+    border: 1px #aaa solid;
+    border-radius: 40px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+    transition-property: background;
+    transition-duration: 2s;
+}
+
+.button button a {
+    text-decoration: none;
+    color: black;
+}
+
+.button button:hover {
+    background-color: rgb(181, 235, 217);
+}
+
+.extra{
+    background-color: #bbb;
+    padding: 5rem;
+}
+
+.extra h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#footer { 
+    background: rgb(2, 2, 49);
+    border-top: brown 4px solid;
+    text-align: center;
+
+}
+
+#footer .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    padding: 3rem;
+}
+
+#footer .footer .foot {
+    display: inline-block;
+}
+
+#footer .footer .foot hr {
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#footer .footer .foot h3 {
+    margin-bottom: 0.3rem;
+    font-size: 1.3rem;
+    color: green;
+    text-align: left;
+}
+
+#footer .footer .foot ul{
+    list-style: none;
+    text-align: left;
+    color: brown;
+    font-weight: bold;
+    padding-left: 0;
+    margin-left: 0;
+    line-height: 2rem;
+}
+
+#footer h1 {
+    color: brown;
+}
+
+#foot {
+    text-align: center;
+    background-color: black;
+    color: brown;
+    font-size: 1rem;
+    padding: 2rem;
+    font-weight: bold;
+}
+
+
+
+@media(max-width: 768px){
+    body {
+        text-align: left;
+        width: 100%;
+    }
+
+    .container {
+        margin: 0 1rem 0 1rem;
+    }
+
+    .extra{
+        padding: 10px;
+    }
+
+    .extra h1{
+        font-size: 13px;
+        padding: 0;
+        margin: 5px;
+        text-align: left;
+    }
+
+    .extra p{
+        margin: 0;
+    }
+
+    #container {
+        display: inline-block;
+    }
+
+    .img {
+        margin: 1rem 0 1rem 0;
+    }
+
+    #footer {
+        display: none;
+    }
+}
